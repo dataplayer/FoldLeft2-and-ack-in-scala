@@ -9,4 +9,10 @@ Two functions we were asked to implement on our PL final at CU:
 These are my solutions. They seem to work, but if you can improve them
 just submit a pull request.
 
+
+Brian McWilliams
+----------------
+
+added a nice clean solution! Thanks Brian.
+
 Shout out to Prof. Baker and Dana for teaching me some scala this semester!
