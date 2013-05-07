@@ -31,6 +31,17 @@ def ack(m: Int, n: Int): Int = {
   }
 }
 
+//Alternate solution, If case statements are in the right order, you don't need the if statements.
+//Slicker, but previous solution would be prefered for quick read/maintenance/clarity.
+def ack(m: Int, n: Int): Int = {
+  require(m >= 0 & n >= 0)
+  (m,n) match {
+  case (0,_) => n+1
+  case (_,0) => ack(m-1,1)
+  case (_,_) => ack(m-1,ack(m,n-1))
+  }
+}
+
 
 def main(args: Array[String]) {
   println(foldLeft2(0)(List(1,2,3),List(4,5),accumulate_max))
